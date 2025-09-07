@@ -33,30 +33,30 @@ wait 50
 
 movie crossfade 10;
 vol #0 transp 0;
-wait 10
+wait 15
 
 movie crossfade 10
 vol #3 show
 wait 10
 movie crossfade 10
 vol #1 show
-wait 10
+wait 15
 
 movie crossfade 10
 vol #2 show
-wait 10
+wait 15
 
-movie crossfade 5
+movie crossfade 10
 vol #4 show
-wait 5
+wait 15
 
-movie crossfade 5
+movie crossfade 10
 vol #5 show
-wait 5
+wait 15
 
-movie crossfade 5
+movie crossfade 10
 vol #7 show
-wait 5
+wait 15
 
 #movie crossfade 25
 #fly focus 25; volume #0 planes z,104,184,3.2; volume #1,2,3,7 region  0,0,0,724,700,185; vol #5 hide;  
@@ -69,13 +69,13 @@ volume #1,2,3,7 region 0,0,0,724,700,185
 volume #5 hide
 wait 25
 
-movie crossfade 5
+movie crossfade 20
 vol #0 transp 0.9
 volume #1-7 hide 
-wait 10
+wait 25
 
 perframe "volume #0 plane z,$1" range 184,204 frames 40
-wait 55
+wait 70
 
 perframe "volume #0 plane z,$1" range 204,172 frames 40
 wait 55
@@ -85,10 +85,10 @@ fly focus 20 focus2
 wait 30
 
 perframe "volume #0 plane z,$1" range 172,164 frames 50
-wait 55
+wait 60
 
 perframe "volume #0 plane z,$1" range 164,175 frames 50
-wait 55
+wait 100
 
 
 
