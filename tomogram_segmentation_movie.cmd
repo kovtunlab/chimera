@@ -69,16 +69,27 @@ volume #1,2,3,7 region 0,0,0,724,700,185
 volume #5 hide
 wait 25
 
-movie crossfade 10
+movie crossfade 5
 vol #0 transp 0.9
 volume #1-7 hide 
-wait 15
+wait 10
 
-perframe "volume #0 plane z,$1" range 184,204 frames 20
+perframe "volume #0 plane z,$1" range 184,204 frames 40
+wait 55
+
+perframe "volume #0 plane z,$1" range 204,172 frames 40
+wait 55
+
+movie crossfade 20
+fly focus 20 focus2
 wait 30
 
-perframe "volume #0 plane z,$1" range 204,173 frames 20
-wait 30
+perframe "volume #0 plane z,$1" range 172,164 frames 50
+wait 55
+
+perframe "volume #0 plane z,$1" range 164,175 frames 50
+wait 55
+
 
 
 
